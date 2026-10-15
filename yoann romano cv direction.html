@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Yoann Romano - Optimisé ATS & Agents IA (Format A4)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* AJUSTEMENTS NORMATIFS ATS & CONCEPTION EXÉCUTIVE */
+    :root {
+      --color-navy: #0d1e34;
+      --color-navy-light: #162e50;
+      --color-anthracite: #1f2937;
+      --color-anthracite-muted: #374151;
+      --color-slate-bg: #f8fafc;
+      --color-border: #cbd5e1;
+    }
+
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--color-anthracite);
+      background-color: #e2e8f0;
+      font-size: 10pt;
+      line-height: 1.35;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--color-navy);
+      letter-spacing: -0.015em;
+    }
+
+    /* Calibrage d'impression : Marges normalisées à 8 mm */
+    @page {
+      size: A4 portrait;
+      margin: 8mm;
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        font-size: 10pt !important;
+        line-height: 1.35 !important;
+      }
+      .cv-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break-avoid {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+<body class="py-3 px-2 sm:px-4">
+
+  <!-- BANDEAU TECHNIQUE ATS (Masqué à l'exportation PDF) -->
+  <aside class="max-w-[210mm] mx-auto mb-2.5 no-print">
+    <div class="bg-white border-l-4 border-[#0d1e34] border-y border-r border-slate-300 rounded p-3 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+      <div>
+        <p class="font-bold text-slate-900 flex items-center gap-1.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          Format Exécutif Calibré (Corps 10 pt | Interligne 1,35 | Marges 8 mm | Structure ATS Validée)
+        </p>
+        <p class="text-slate-600 text-[11px] mt-0.5">
+          Positionnement DR Régional / DR des Opérations / BU | Pilotage multi-sites & territoires étendus | Sponsor IA & Gemini Enterprise.
+        </p>
+      </div>
+      <button onclick="window.print()" class="shrink-0 bg-[#0d1e34] hover:bg-[#162e50] text-white font-bold py-2 px-4 rounded transition text-xs flex items-center gap-2 shadow">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Imprimer / Exporter en PDF Standard
+      </button>
+    </div>
+  </aside>
+
+  <!-- FEUILLE MAÎTRESSE (Format d'extraction ATS 100% sémantique) -->
+  <main class="cv-container max-w-[210mm] mx-auto bg-white shadow-xl border border-slate-300 overflow-hidden rounded-sm">
+    
+    <!-- EN-TÊTE SÉMANTIQUE : TITRE 1 + COORDONNÉES + SCORECARD -->
+    <header class="bg-[#0d1e34] text-white px-5 py-3.5 border-b-2 border-slate-500">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+        <div>
+          <!-- RÈGLE 1 : Vrai H1 pour l'identité candidat -->
+          <h1 class="text-2xl md:text-[26px] font-black uppercase tracking-tight text-white m-0 leading-none">
+            Yoann ROMANO
+          </h1>
+          <p class="text-[11pt] font-bold text-blue-200 uppercase tracking-wide mt-1 leading-tight">
+            DR RÉGIONAL / DR DES OPÉRATIONS / DR Business Unit
+          </p>
+          <p class="text-[8.5pt] text-slate-300 font-semibold tracking-normal mt-0.5 leading-snug">
+            Pilotage Multi-Sites & Forts Volumes | Industrie & BtoB | Sponsor IA & Transformation
+          </p>
+        </div>
+
+        <!-- COORDONNÉES D'ACCÈS DIRECT (Texte indexable, zéro image masquée) -->
+        <address class="not-italic text-[8.5pt] text-slate-200 text-left md:text-right space-y-0.5 shrink-0 md:border-l md:border-slate-700 md:pl-4">
+          <p><strong class="text-white">Localisation :</strong> Région PACA / Mobilité à définir</p>
+          <p><strong class="text-white">Téléphone :</strong> <a href="tel:0650947572" class="hover:text-blue-300">06.50.94.75.72</a></p>
+          <p><strong class="text-white">Email :</strong> <a href="mailto:yoann.romano.p2e@gmail.com" class="hover:underline">yoann.romano.p2e@gmail.com</a></p>
+          <p><strong class="text-white">LinkedIn :</strong> <a href="https://www.linkedin.com/in/romano-yoann-b3a91574" target="_blank" class="hover:underline">linkedin.com/in/romano-yoann-b3a91574</a></p>
+        </address>
+      </div>
+
+      <!-- IMPACT IMMÉDIAT DU SCORECARD -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mt-3 pt-2.5 border-t border-slate-700/80 text-center">
+        <div class="bg-[#14263d] rounded p-1.5 border border-slate-700 shadow-sm">
+          <span class="block text-[14pt] font-black text-white leading-tight"><strong>18 M€</strong></span>
+          <span class="text-[7.5pt] text-slate-300 uppercase tracking-wider font-semibold">CA Maximum Piloté</span>
+        </div>
+        <div class="bg-[#14263d] rounded p-1.5 border border-slate-700 shadow-sm">
+          <span class="block text-[14pt] font-black text-white leading-tight"><strong>105</strong></span>
+          <span class="text-[7.5pt] text-slate-300 uppercase tracking-wider font-semibold">Collaborateurs Encadrés</span>
+        </div>
+        <div class="bg-[#14263d] rounded p-1.5 border border-slate-700 shadow-sm">
+          <span class="block text-[14pt] font-black text-white leading-tight"><strong>+62,5 %</strong></span>
+          <span class="text-[7.5pt] text-slate-300 uppercase tracking-wider font-semibold">Croissance CA (APAVE)</span>
+        </div>
+        <div class="bg-[#14263d] rounded p-1.5 border border-slate-700 shadow-sm">
+          <span class="block text-[14pt] font-black text-white leading-tight"><strong>+13,6 pts</strong></span>
+          <span class="text-[7.5pt] text-slate-300 uppercase tracking-wider font-semibold">Hausse Marge (MBE)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- CORPS STRUCTURÉ EN 2 COLONNES ASYMÉTRIQUES SANS DÉBORDEMENT -->
+    <div class="grid grid-cols-12">
+      <!-- COLONNE GAUCHE (Compétences, Formation, Engagements & Soft Skills) -->
+      <aside class="col-span-12 md:col-span-4 bg-[#f8fafc] border-r border-slate-300 p-3 space-y-3">
+        
+        <!-- COMPÉTENCES CLÉS -->
+        <section class="page-break-avoid">
+          <div class="border-b-2 border-[#0d1e34] pb-0.5 mb-1.5">
+            <h2 class="text-[9pt] font-black uppercase text-[#0d1e34] tracking-wider m-0">
+              COMPÉTENCES CLÉS
+            </h2>
+          </div>
+
+          <ul class="space-y-1.5 text-[8.8pt] list-none p-0 m-0">
+            <li>
+              <strong class="text-slate-900 block font-bold leading-tight">Stratégie Opérationnelle & Finance :</strong>
+              <span class="text-slate-700 text-[8.5pt] leading-tight block">Pilotage de <strong>P&L globaux et régionaux</strong>, gestion des investissements (<strong>CAPEX</strong>), optimisation de la rentabilité (<strong>MBE</strong>) à grande échelle.</span>
+            </li>
+            <li>
+              <strong class="text-slate-900 block font-bold leading-tight">Direction de Région & Management :</strong>
+              <span class="text-slate-700 text-[8.5pt] leading-tight block">Supervision de territoires étendus (<strong>DROM-COM, Grand Sud-Est</strong>), encadrement de directeurs d'agences, gestion RH de larges effectifs (<strong>+100 personnes</strong>).</span>
+            </li>
+            <li>
+              <strong class="text-slate-900 block font-bold leading-tight">Transformation & IA Agentique :</strong>
+              <span class="text-slate-700 text-[8.5pt] leading-tight block"><strong>Sponsor IA Comex</strong>, utilisation avancée de <strong>Gemini Enterprise</strong>, scénarisation d'agents, conduite du changement.</span>
+            </li>
+            <li>
+              <strong class="text-slate-900 block font-bold leading-tight">Développement Commercial BtoB :</strong>
+              <span class="text-slate-700 text-[8.5pt] leading-tight block">Négociation de contrats cadres, conquête de <strong>grands comptes industriels</strong>, réponse aux appels d'offres d'envergure.</span>
+            </li>
+            <li>
+              <strong class="text-slate-900 block font-bold leading-tight">Logistique & Supply Chain :</strong>
+              <span class="text-slate-700 text-[8.5pt] leading-tight block">Restructuration de <strong>flux logistiques régionaux</strong>, optimisation de flottes, intégration d'outils de production.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- FORMATION INITIALE & CONTINUE -->
+        <section class="page-break-avoid">
+          <div class="border-b-2 border-[#0d1e34] pb-0.5 mb-1.5">
+            <h2 class="text-[9pt] font-black uppercase text-[#0d1e34] tracking-wider m-0">
+              FORMATION
+            </h2>
+          </div>
+
+          <ul class="space-y-1.5 text-[8.5pt] list-disc list-outside ml-3 text-slate-700 p-0 m-0 leading-tight">
+            <li>
+              <strong class="text-slate-900 font-semibold">Sponsors IA Comex (2026) :</strong> Gouvernance <strong>IA Agentique</strong>, prise en main de la plateforme <strong>Gemini Enterprise</strong> (Groupe Apave).
+            </li>
+            <li>
+              <strong class="text-slate-900 font-semibold">Formation Continue (2001 - 2019) :</strong> P.N.L, Communication Non Violente (C.N.V), négociation « cohesium ».
+            </li>
+            <li>
+              <strong class="text-slate-900 font-semibold">ESC Montpellier & IUT (1999 - 2001) :</strong> Formations commerciales en alternance.
+            </li>
+          </ul>
+        </section>
+
+        <!-- ENGAGEMENTS & SOFT SKILLS -->
+        <section class="page-break-avoid bg-white p-2.5 rounded border border-slate-200 space-y-2">
+          <div class="border-b border-[#0d1e34] pb-0.5 mb-1">
+            <h2 class="text-[9pt] font-black uppercase text-[#0d1e34] tracking-wider m-0">
+              ENGAGEMENTS & SOFT SKILLS
+            </h2>
+          </div>
+          <div>
+            <p class="text-[8.5pt] text-slate-700 leading-snug">
+              <strong class="text-slate-900 font-bold">Club de Handball ECOS Eguilles :</strong> Entraîneur bénévole et accompagnateur de jeunes arbitres et joueurs (<strong class="text-slate-900">Pédagogie</strong>, <strong class="text-slate-900">prise de décision rapide</strong>, <strong class="text-slate-900">leadership sportif</strong>).
+            </p>
+          </div>
+          <div class="pt-1.5 border-t border-slate-200">
+            <p class="text-[8.5pt] text-slate-700 leading-snug">
+              <strong class="text-slate-900 font-bold">Association S.N.C (Depuis 2019) :</strong> Accompagnement vers le retour à l'emploi (valorisation de la résilience et du transfert de compétences).
+            </p>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- COLONNE DROITE (Résumé Exécutif + Expériences Chronologiques Inverses) -->
+      <section class="col-span-12 md:col-span-8 p-3 md:p-3.5 space-y-2.5">
+        
+        <!-- RÉSUMÉ EXÉCUTIF -->
+        <section class="page-break-avoid bg-slate-50 p-2.5 rounded border border-slate-200">
+          <div class="border-b-2 border-[#0d1e34] pb-0.5 mb-1.5">
+            <h2 class="text-[9.2pt] font-black uppercase text-[#0d1e34] tracking-wider m-0">
+              RÉSUMÉ EXÉCUTIF
+            </h2>
+          </div>
+          <p class="text-[9.2pt] text-slate-800 leading-snug text-justify m-0">
+            Directeur des Opérations et stratège avec plus de 15 ans d'expérience dans le pilotage de directions régionales et de réseaux multi-sites à forts enjeux (territoires étendus, gestion de <strong>plus de 100 collaborateurs</strong>, centres de profit jusqu'à <strong>18 M€</strong>). Reconnu pour ma culture du résultat, ma capacité à structurer la croissance à grande échelle et mon esprit intrapreneurial. Résolument tourné vers l'avenir, j'accompagne la performance opérationnelle des entreprises tout en me positionnant comme un leader de la transformation digitale et de l'intégration de l'<strong>IA Agentique</strong> dans les processus d'affaires complexes.
+          </p>
+        </section>
+
+        <!-- EXPÉRIENCES PROFESSIONNELLES EN ORDRE CHRONOLOGIQUE INVERSE -->
+        <section class="space-y-2">
+          <div class="border-b-2 border-[#0d1e34] pb-0.5 mb-1">
+            <h2 class="text-[9pt] font-black uppercase text-[#0d1e34] tracking-wider m-0">
+              EXPÉRIENCES PROFESSIONNELLES
+            </h2>
+          </div>
+
+          <!-- 1. APAVE E&M -->
+          <article class="page-break-avoid border-l-2 border-[#0d1e34] pl-2.5 space-y-0.5">
+            <div class="flex flex-wrap items-baseline justify-between gap-1">
+              <h3 class="text-[9.2pt] font-black text-[#0d1e34] m-0 leading-tight">
+                Directeur d'Agence Multi-Sites — Grand Sud-Est et Outre-Mer
+              </h3>
+              <span class="text-[7.5pt] font-bold bg-[#0d1e34] text-white px-1.5 py-0.2 rounded">
+                Depuis Fév. 2020
+              </span>
+            </div>
+            <p class="text-[8.6pt] font-bold text-slate-700 leading-tight">
+              APAVE E&M (Environnement)
+            </p>
+            <ul class="text-[8.5pt] text-slate-700 space-y-0.5 list-disc list-outside ml-3 leading-tight">
+              <li>
+                <strong class="text-slate-900">Pilotage financier et forts volumes :</strong> Gestion intégrale du <strong>P&L</strong> sur un territoire étendu. Croissance du CA de <strong>+62,5 %</strong> (de <strong>8 M€</strong> en 2021 à <strong>13 M€</strong> en 2026). Hausse de la marge brute d'exploitation (<strong>MBE</strong>) de <strong>+13,6 points</strong>, propulsée de <strong>14,4 %</strong> à <strong>28 %</strong>.
+              </li>
+              <li>
+                <strong class="text-slate-900">Transformation & Sponsoring IA (Comex) :</strong> Acteur clé de la feuille de route stratégique « <strong>IA Agentique</strong> » du Groupe. Configuration, scénarisation et test d'agents connectés via la plateforme <strong>Gemini Enterprise</strong> pour encadrer les nouveaux usages et l'automatisation.
+              </li>
+              <li>
+                <strong class="text-slate-900">Développement RH & Conduite du changement :</strong> Dimensionnement des équipes de <strong>65 à 105 collaborateurs (+61,5 %)</strong> ; structuration de l'encadrement intermédiaire et intégration opérationnelle des territoires d'Outre-Mer (<strong>DROM-COM</strong>).
+              </li>
+            </ul>
+          </article>
+
+          <!-- 2. ArcelorMittal -->
+          <article class="page-break-avoid border-l-2 border-slate-300 pl-2.5 space-y-0.5">
+            <div class="flex flex-wrap items-baseline justify-between gap-1">
+              <h3 class="text-[9.2pt] font-black text-[#0d1e34] m-0 leading-tight">
+                Directeur d'Agence
+              </h3>
+              <span class="text-[7.5pt] font-semibold text-slate-600 bg-slate-100 px-1.5 py-0.2 rounded border border-slate-300">
+                Oct. 2016 – Fév. 2020 | PACA
+              </span>
+            </div>
+            <p class="text-[8.6pt] font-bold text-slate-700 leading-tight">
+              ArcelorMittal Distribution Solutions (Aciers)
+            </p>
+            <ul class="text-[8.5pt] text-slate-700 space-y-0.5 list-disc list-outside ml-3 leading-tight">
+              <li>
+                <strong class="text-slate-900">Développement commercial :</strong> Direction d'un centre de profit de 25 personnes générant <strong>18 M€ de CA</strong>. Conquête d'appels d'offres stratégiques (marché de façade pour l'Institut du Monde Arabe, Paris).
+              </li>
+              <li>
+                <strong class="text-slate-900">Investissements industriels (CAPEX) :</strong> Pilotage d'une enveloppe de <strong>+1 M€</strong> pour moderniser l'outil de production (ligne de découpe).
+              </li>
+              <li>
+                <strong class="text-slate-900">Supply chain :</strong> Refonte du schéma logistique et renforcement de la flotte dédiée (<strong>+2 camions</strong>).
+              </li>
+            </ul>
+          </article>
+
+          <!-- 3. ThyssenKrupp Plastics -->
+          <article class="page-break-avoid border-l-2 border-slate-300 pl-2.5 space-y-0.5">
+            <div class="flex flex-wrap items-baseline justify-between gap-1">
+              <h3 class="text-[9.2pt] font-black text-[#0d1e34] m-0 leading-tight">
+                Directeur d'Agence
+              </h3>
+              <span class="text-[7.5pt] font-semibold text-slate-600 bg-slate-100 px-1.5 py-0.2 rounded border border-slate-300">
+                Sept. 2010 – Sept. 2016 | Zone PACA
+              </span>
+            </div>
+            <p class="text-[8.6pt] font-bold text-slate-700 leading-tight">
+              ThyssenKrupp Plastics
+            </p>
+            <ul class="text-[8.5pt] text-slate-700 list-disc list-outside ml-3 leading-tight">
+              <li>
+                <strong class="text-slate-900">Performance Commerciale :</strong> Pilotage d'un centre de profit (15 collaborateurs) et consolidation d'un portefeuille atteignant <strong>6 M€ de CA</strong>.
+              </li>
+            </ul>
+          </article>
+
+          <!-- 4. Polyelec Éclairage -->
+          <article class="page-break-avoid border-l-2 border-slate-300 pl-2.5 space-y-0.5">
+            <div class="flex flex-wrap items-baseline justify-between gap-1">
+              <h3 class="text-[9.2pt] font-black text-[#0d1e34] m-0 leading-tight">
+                Fondateur & Dirigeant (Entrepreneur)
+              </h3>
+              <span class="text-[7.5pt] font-semibold text-slate-600 bg-slate-100 px-1.5 py-0.2 rounded border border-slate-300">
+                Juil. 2007 – Sept. 2010
+              </span>
+            </div>
+            <p class="text-[8.6pt] font-bold text-slate-700 leading-tight">
+              Polyelec Éclairage
+            </p>
+            <ul class="text-[8.5pt] text-slate-700 space-y-0.5 list-disc list-outside ml-3 leading-tight">
+              <li>
+                <strong class="text-slate-900">Création d'entreprise :</strong> Lancement et structuration from scratch, développement jusqu'à <strong>1,2 M€ de chiffre d'affaires</strong>.
+              </li>
+              <li>
+                <strong class="text-slate-900">Vision 360° :</strong> Management de 12 salariés, gestion de la trésorerie, stratégie commerciale et supervision des chantiers.
+              </li>
+            </ul>
+          </article>
+
+          <!-- 5. Parcours Évolutif (1999 – 2007) -->
+          <article class="page-break-avoid pt-1 border-t border-slate-200">
+            <h3 class="text-[8.8pt] font-black text-[#0d1e34] uppercase tracking-wide mb-0.5 m-0">
+              Parcours Évolutif : Vente & Encadrement (1999 – 2007)
+            </h3>
+            <ul class="text-[8.3pt] text-slate-700 space-y-0.5 list-disc list-outside ml-3 leading-tight">
+              <li><strong>2004 - 2007 :</strong> Ingénieur Commercial Éclairage — Luminem</li>
+              <li><strong>2002 - 2004 :</strong> Commercial BtoB Carburants — ATCE Pétrole (Dyneff, Rompetrol)</li>
+              <li><strong>1999 - 2002 :</strong> Chef de Rayon — Groupe Géant Casino</li>
+            </ul>
+          </article>
+
+        </section>
+
+      </section>
+
+    </div>
+
+    <!-- PIED DE DOCUMENT DISCRET -->
+    <footer class="bg-slate-100 border-t border-slate-300 px-4 py-1 text-center text-[7.5pt] text-slate-500 flex justify-between items-center">
+      <span>Yoann ROMANO — Références professionnelles disponibles sur demande</span>
+      <span class="font-semibold text-slate-600">CV Exécutif A4 (Standard ATS)</span>
+    </footer>
+
+  </main>
+
+</body>
+</html>
